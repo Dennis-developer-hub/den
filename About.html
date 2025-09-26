@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>About</title>
+ <style>
+		header{
+			text-align: center;
+			border: 2px solid blue;
+			padding: 8px;
+			background-color: grey;
+			color: blue;
+			font-weight: bolder;
+			font-size: 25px;
+		}
+  	nav ul{
+			padding: 0;
+			margin: 0;
+			border: 1px solid black;
+			background-color: green;
+		}
+  	li a{
+			color: white;
+			text-decoration: none;
+			font-family: "times New Roman",sans-serif;
+			padding: 2px;
+			margin: 5px;
+		}
+  	li a:hover{
+			background-color: purple;
+			border: 1px solid black;
+		}
+  	ul li{
+			display: inline-block;
+			list-style-type: none;
+			padding: 5px;
+			
+		}
+  h1{
+   text-align: center;
+  }
+  .interior{
+   background-image: url(myimage/room.jpg);
+   height: 350px;
+ background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+animation: change 5s infinite;
+		
+  }
+		@keyframes change{
+			from{background-image: url(myimage/room.jpg);}
+			to{background-image: url(myimage/room2.jpg);}
+		}
+
+
+  .section{
+   text-align: center;
+   background-color: darkkhaki;
+   padding: 20px;
+  }
+		
+ 
+	
+
+
+		.value{
+			background-color: whitesmoke;
+			padding: 22px;
+			text-align: center;
+			margin: 5px;
+			clear: left;
+		}
+		#h3{
+			text-align: center;
+		}
+		.flex-container1{
+			width: 100%;
+			background-color: whitesmoke;
+			display: flex;
+			margin: 5px;
+			align-items: center;
+		}
+		.flex-item{
+			width: 300px;
+			height: 200px;
+			background-color: black;
+			color: white;
+			margin: 5px;
+			padding: 5px;
+			text-align: center;
+		}
+		.flex-container2{
+			display: flex;
+			width: 100%;
+			clear: both;
+			height: 200px;
+			margin: 5px;
+		}
+		.flex-item2{
+			background-color: aqua;
+			width: 300px;
+			height: 200px;
+			margin: 5px;
+			padding: 5px;
+			text-align: center;
+			
+		}
+		.flex-container3{
+			display: flex;
+			width: 100%;
+			background-color: whitesmoke;
+			height: 200px;
+			margin: 5px;
+		}
+		.flex-item3{
+			background-color: yellow;
+			width: 300px;
+			height: 200px;
+			margin: 5px;
+			text-align: center;
+			padding: 5px;
+			clear: left;
+		}
+
+  		footer{
+			background-color: grey;
+			color: white;
+			text-align: center;
+   clear: left;
+			padding: 10px;
+			font-size: 12px;
+		}
+  @media screen and (max-width:600px){
+			.flex-container1{
+				flex-wrap: wrap;
+			}
+			.flex-container2{
+				flex-wrap: wrap;
+			}
+			.flex-container3{
+				flex-wrap: wrap;
+			}
+			.flex-item{
+				width: 100%;
+				margin-left:1px;
+			}
+			.flex-item2{
+				width: 100%;
+			margin: 5px;
+				
+			}
+			.flex-item3{
+				width: 100%;
+			
+				margin-left: 1px;
+			}
+			footer{
+				clear: left;
+			}
+	}
+	
+	
+ </style>
+</head>
+<body>
+ 	<header>Blues Restaurant</header>
+	<nav>
+		<ul>
+			
+			<li>
+				
+				<a href="Home.html">Home</a>
+			</li>
+			<li>
+				<a href="About.html">About</a>
+			</li>
+			<li>
+				<a href="menu.html">Menu</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+			<li>
+				<a href="#">Gallery</a>
+			</li>
+		</ul>
+	</nav>
+ <h1>About Us</h1>
+ <div class="interior">
+  
+ </div>
+ <div class="section">
+  
+  <h2>Our Story</h2>
+ <p>Welcome to Blues Hotel where the rhythms of the past meets the warmth of the present </p>
+	<p>We are passionate about sharing our love of blues music and southern hospitality with every guest who walk through our doors.</p>
+	<p>Blues Hotel is more than just a place to stay. Its a home away from home where the soulful sounds of blues music feels the air and we have crafted a unique experience that combines the two from our cozy rooms to our live music venues. Every details makes you feels like you are part of blues family</p>
+ </div>
+
+ <h2 style="text-align: center;">Meet Our Team</h2>
+	<h1>Managers</h1>
+	<div class="flex-container1">
+		<div class="flex-item">
+<h2>Peter</h2>
+		<p>Peter warms the hospitality and leadership make our restaurant a welcoming place</p>
+		</div>
+		<div class="flex-item">
+<h2>Rose</h2>
+		<p>Rose's dedication to excellence ensures every guest has an exceptional experiences</p>
+		</div>
+				<div class="flex-item">
+		<h2>Brian</h2>
+		<p>Brian's  warm hospitality and leadership makes our restaurant a welcoming place</p>	
+		</div>
+		<div class="flex-item">
+		<h2>Brian</h2>
+		<p>Brian's  warm hospitality and leadership makes our restaurant a welcoming place</p>
+		</div>
+		
+	</div>
+	
+	<h1>Chefs</h1>
+<div class="flex-container2">
+	<div class="flex-item2">
+<h2>Peter</h2>
+	<p>peter's precision and care  ensures every plate is a masterpiece</p>
+	</div>
+	<div class="flex-item2">
+	<h2>dennis</h2>
+	<p>Our head chef, Dennis brings flavours to life with his creative dishes and attention to details</p>
+	</div>
+<div class="flex-item2">
+	<h2>Knight</h2>
+	<p>Knight's innovative approach to cooking pushes the boundaries of culinary art</p>
+</div>
+<div class="flex-item2">
+	<h2>Benjamin</h2>
+	<p>Benjamin's innovative approach to cooking, pushes the boundary of culinary arts</p>
+</div>
+</div>
+	
+	<h1>Servers</h1>
+<div class="flex-container3">
+	<div class="flex-item3">
+	<h2>Dorine</h2>
+	<p>Dorine's friendly smile and attentive services makes every guest feels at home</p>
+	</div>
+	<div class="flex-item3">
+	<h2>Agnes</h2>
+	<p>Agnes's knowledge of our menu and drinks helps guest find their perfect match</p>
+	</div>
+	<div class="flex-item3">
+<h2>Kinuthia</h2>
+	<p>kinuthia's enthusiasm and energy brings spark to our dining area</p>
+	</div>
+<div class="flex-item3">
+	<h2>Dorine</h2>
+	<p>Dorine's friendly smile and attentive services makes every guest feels at home</p>
+</div>
+</div>
+
+
+
+
+
+
+<div class="value">
+	<h3 id="h3">Our Values</h3>
+	<p>we are commited to providing exceptional services, fostering a love of blues music and creating unforgetable experiences for our guests. Whether you are a music love,a foodie or just looking for a relaxing getaway, we invite you to join us and let the blues serenade you</p>
+</div>
+
+ <footer>
+		<p>&copy;2025-2027. Blues hotel, All rights reserved<br>Contact:0117760576</p>
+	</footer>
+</body>
+<script src="web25.js"></script>
+</html>

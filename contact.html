@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>contact</title>
+ <style>
+		header{
+			text-align: center;
+			border: 2px solid blue;
+			padding: 8px;
+			background-color: grey;
+			color: blue;
+			font-weight: bolder;
+			font-size: 25px;
+		}
+  	nav ul{
+			padding: 0;
+			margin: 0;
+			border: 1px solid black;
+			background-color: green;
+		}
+  	li a{
+			color: white;
+			text-decoration: none;
+			font-family: "times New Roman",sans-serif;
+			padding: 2px;
+			margin: 5px;
+		}
+  	li a:hover{
+			background-color: purple;
+			border: 1px solid black;
+		}
+  	ul li{
+			display: inline-block;
+			list-style-type: none;
+			padding: 5px;
+			
+		}
+		.main{
+			background-color:darkgoldenrod;
+			padding: 60px;
+			text-align: center;
+		}
+		.contact{
+			background-color: chartreuse;
+			padding: 60px;
+			text-align: center;
+		}
+  h1{
+   text-align: center;
+  }
+  #interior{
+   background-image: url(myimage/background.webp);
+   height: 350px;
+   background-position: center;
+  }
+  .section{
+   text-align: center;
+   background-color: darkkhaki;
+   padding: 20px;
+  }
+  .para{
+   background-color: black;
+   padding: 25px;
+  }
+
+		
+	form{
+		text-align: center;
+		background-color: deeppink;
+		padding: 25px;
+	}
+	.message{
+		background-color: whitesmoke;
+		padding: 25px;
+		text-align: center;
+	}
+		
+
+  		footer{
+			background-color:grey;
+			color: white;
+			text-align: center;
+   clear: both;
+			padding: 12px;
+			font-size: 12px;
+		}
+  @media screen and (max-width:800px){
+   .message{
+				width: 300px;
+				text-align: center;
+				padding-right: 30px;
+				margin-left: 10px;
+			}
+			.main{
+				background-color: darkorange;
+			}
+   nav ul{
+    background-color: black;
+				max-width: 100%;
+   }
+   ul li {
+    display: block;
+   }
+
+  }
+ </style>
+</head>
+<body>
+ 	<header>Blues Restaurant</header>
+	<nav>
+		<ul>
+			
+			<li>
+				
+				<a href="Home.html">Home</a>
+			</li>
+			<li>
+				<a href="About.html">About</a>
+			</li>
+			<li>
+				<a href="menu.html">Menu</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+			<li>
+				<a href="#">Gallery</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="main">
+		<h2>Get in Touch</h2>
+		<p>Phone:0113994082<br>
+		Email:<a href="#">lipwamad@gmail.com</a><br>
+	Hours Open 24/7</p>
+	</div>
+	<div class="contact">
+		<h2>Follow Us</h2>
+		<p>Facebook:<br>WhatsApp:</p>
+	</div>
+<div class="message">
+	<h2>Send Us Message</h2>
+	<p>You can reach us directly using the email or phone number above or fill out this contact form below</p>
+</div>
+<form autocomplete="off">
+	<label for="Username">Username<br></label>
+	<input type="text"name="Username"id="username"><br><br>
+	<label for="Email">Email<br></label>
+	<input type="text"name="Email"id="Email"><br><br>
+	<label for="Phone">Phone<br></label>
+	<input type="tel"id="phone"name="Phone"><br><br>
+	<label for="message">Message<br></label>
+	<textarea id="message"name="message"></textarea><br>
+	<input type="submit"value="send">
+</form>
+
+ <footer>
+		<p>&copy;2025-2027. Blues hotel, All rights reserved<br>Contact:0117760576</p>
+	</footer>
+</body>
+<script src="web25.js"></script>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	<style>
+		html{
+			background-color: rgb(198, 106, 205);
+		}
+		header{
+			text-align: center;
+			border: 2px solid blue;
+			padding: 8px;
+			background-color: grey;
+			color: blue;
+			font-weight: bolder;
+			font-size: 25px;
+		}
+		nav ul{
+			padding: 0;
+			margin: 0;
+			border: 1px solid black;
+			background-color: green;
+		}
+		
+		li a{
+			color: white;
+			text-decoration: none;
+			font-family: "times New Roman",sans-serif;
+			padding: 2px;
+			margin: 5px;
+		}
+		li a:hover{
+			background-color: purple;
+			border: 1px solid black;
+		}
+		li a:active{
+			background-color: purple;
+			color: black;
+		}
+		li a:visited{
+			text-decoration: underline;
+		}
+		ul li{
+			display: inline-block;
+			list-style-type: none;
+			padding: 5px;
+			
+		}
+		#search{
+			display: inline;
+			margin-right: 2px;
+			margin: 2px;
+			float: right;
+			padding: 4px;
+			outline: none;
+			border-radius: 2px;
+			border: none;
+		}
+		#logo{
+			background-color: burlywood;
+			padding: 20px;
+			text-align: center;
+		}
+	
+.Hero{
+	color: white;
+	font-size: 25px;
+	padding: 10px;
+	margin: 2px;
+	text-align: center;
+	-webkit-animation: dennis 10s infinite;
+	animation: dennis 10s infinite;
+	
+}
+@keyframes dennis{
+5%{background-image: url(myimage/burger.avif);
+background-repeat: no-repeat;
+background-size: cover;
+color: red;
+background-position: center;
+height: 350px;
+background-position: bottom;}
+50%{
+	background-image: url(myimage/pizza.avif);
+	background-repeat: no-repeat;
+	color: #33cc33;
+	height:350px;
+	background-size: cover;
+}
+100%{
+	background-image: url(myimage/orange\ juice.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 350px;
+	
+}
+}
+h2{
+	padding-top: 60px;
+	font-size: 60px;
+	font-weight: bolder;
+	position: relative;
+}
+.flex-container{
+	background-color: #ff69b4 ;
+	width: 100%;
+	display: flex;
+	height: auto;
+	flex-wrap: wrap;
+	align-content: center;
+	
+}
+.flex-item{
+	width: 300px;
+	height: 200px;
+	padding: 12px;
+
+}
+
+
+
+		.paragraph{
+			text-align: center;
+			padding: 30px;
+			padding-bottom: 60px;
+			background-color:whitesmoke;
+			
+
+		}
+
+		/* Button */
+		 button{
+			margin: auto;
+			align-items: center;
+			padding-left:12px;
+			background-color: green;
+			color: white;
+			border-radius: 5px;
+			border: none;
+			width: 20%;
+			padding:12px;
+			margin: 5px;
+			clear: both;
+			outline: 2px solid black;
+			animation: neon-outline 2s infinite;
+		}
+		@keyframes neon-outline{
+   0%{outline-color:black;
+			outline-offset: 0px;}
+			25%{outline-color: #ff69b4;
+			outline-offset: 2px;}
+			50%{outline-color: #33cc33;
+			outline-offset: 4px;}
+			75%{outline-color: #ff9900;
+			outline-offset: 2px;}
+			100%{outline-color: #007bff;
+			outline-offset: 0px;}
+		}
+		button a{
+			text-decoration: none;
+			color: white;
+		}
+		button:hover{
+			background-color: purple;
+			outline: none;
+			
+		}
+	
+		.loc{
+			background-color: burlywood;
+			text-align: center;
+		max-width: 100%;
+			color:black;
+			height: 250px;
+			margin: 1px;
+			
+
+		}
+		#p2{
+			padding: 20px;
+			width: 50%;
+			margin: auto;
+		}
+		
+	#pic img{
+		width: 100%;
+		height: 300px;
+		padding-top: 1px;
+
+	}
+		footer{
+			background-color: grey;
+			color: white;
+			text-align: center;
+			padding: 12px;
+		}
+		@media screen and (max-width:768px){
+			
+			nav ul{
+				background-color: black;
+				
+			}
+			ul li{
+				display: block;
+			}
+			#search{
+			display: none;
+			}
+			.flex-container{
+				width: 100%;
+			}
+
+			.image{
+			background-color: whitesmoke;
+				padding: 12px;
+				margin: 2px;
+				max-width: 1024px;
+				max-height: 600px;
+				object-fit: contain;
+			
+				
+			}
+			 img{
+				width: 100%;
+				padding: 2px;
+				margin-right: 5px;
+				
+			}
+			h2{
+				padding-bottom: 25px;
+				padding-top: 12px;
+				margin-bottom: 5px;
+			}
+			#p2{
+				padding: 1px;
+				width: 60%;
+
+			}
+			.loc{
+				padding: 20px;
+				height: 300px;
+			}
+			.btn{
+				padding: 22px;
+			}
+			button{
+				padding: 5px;
+				width: 50%;
+			}
+			.food{
+				padding: 5px;
+				padding-left: 10px;
+			}
+			.food img{
+				margin-right: 8px;
+				padding: 8px;
+			}
+			
+		}
+		@media screen and (min-width:360px) and (max-width:600px){
+			.food{
+				padding-left: 1px;
+				
+			}
+			.food img{
+				width: 100%;
+			padding-right: 1px;
+				padding-left: 1px;
+			margin: 1px;
+			
+			}
+			.flex-item {
+				width: 100%;
+			}
+		}
+
+	
+	
+	</style>
+</head>
+<body>
+	<header>Blues Restaurant</header>
+	<nav>
+		<ul>
+			
+			<li>
+				
+				<a href="Home.html">Home</a>
+			</li>
+			<li>
+				<a href="About.html">About</a>
+			</li>
+			<li>
+				<a href="menu.html">Menu</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<a href="Gallery.html">Gallery</a>
+			</li>
+			<input type="search"value="search"id="search">
+		</ul>
+	</nav>
+
+	<div id="logo">
+<h1>Welcome To Blues hotel</h1>
+</div>
+
+
+
+<div class="main">
+	<section class="Hero">
+		<h2>Soulful Stays, Bluesy Vibez</h2>
+		
+	</section>
+</div>
+<div class="paragraph">
+	<p>We offer a variety of delicious meals followed by sweet fresh natural drinks made by our chefs</p>
+	<p>Welcome to Blues Hotel. We are the leading hotel in Western region of Kenya<br>We are commited to serve you and your loved ones with special, sweet delicious meals followed by sweet aroma from the kitchen</p>
+</div>
+
+<div class="flex-container">
+	<div class="flex-item">
+		<img src="myimage/sweetdrinks/chips.jpeg"alt="chips"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+		<img src="myimage/burger.avif"alt="burger"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+<img src="myimage/chapati.jpg"alt="chapati"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+	<img src="myimage/chai.jpg"alt="tea"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+		<img src="myimage/Brown Mandazi.jpeg"alt="maandazi"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+<img src="myimage/blck.jpg"alt="blackcoffee"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+	<img src="myimage/milk.jpeg"alt="milk"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+<img src="myimage/nyama waru.jpg"alt="nyama"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+<img src="myimage/orange juice.jpg"alt="juice"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+		<img src="myimage/pizza.avif"alt="pizza"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+		<img src="myimage/gin.jpeg"alt="gin"width="300px"height="200px">
+	</div>
+	<div class="flex-item">
+		<img src="myimage/pan.jpeg"alt="pancake"width="300px"height="200px">
+	</div>
+</div>
+
+
+
+
+
+
+
+<div class="loc">
+	<p id="p2">We are located along Kitale-Bungoma Road in western kenya. We have delicious meals such as<br>
+Tea,Brown chapati,Grilledchicken,sweet maandazi,pilau and many more. Come and experience bluesy vibes. click the button to explore more about us.
+	</p>
+	<div class="btn">
+<button>
+	<a href="About.html">Learn More</a>
+</button>
+<button>
+	<a href="menu.html">Menu</a>
+</button>
+
+</div>
+</div>
+<div id="pic">
+<img src="myimage/room.jpg"alt="interior">
+</div>
+
+
+	
+	<footer>
+		<p>&copy;2025-2027. Blues hotel, All rights reserved<br>Contact:0117760576</p>
+
+	</footer>
+</body>
+<script src="web25.js"></script>
+</html>
